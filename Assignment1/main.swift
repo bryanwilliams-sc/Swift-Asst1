@@ -20,10 +20,10 @@ func startApp(){
         selection = Int(readLine() ?? "0") ?? 0
         switch(selection){
             case 1:
-            addStudent(students: &students)
+                addStudent(students: &students)
                 break
             case 2:
-            viewAllStudents(students: students)
+                viewAllStudents(students: students)
                 break
             case 3:
                 findStudentAvgGrade(students: students)
@@ -76,7 +76,6 @@ func addStudent(students: inout [Student]){
         }else{
             break
         }
-        
     }
     
     print("Enter Grades (Enter 0 to complete): ")
@@ -88,7 +87,7 @@ func addStudent(students: inout [Student]){
         }
         else if (grade > 100 || grade < 0){
             print("Grade must be between 1 and 100")
-        }else {
+        } else {
             grades.append(grade)
         }
     }
