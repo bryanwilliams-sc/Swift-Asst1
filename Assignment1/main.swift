@@ -105,7 +105,7 @@ func viewAllStudents(students: [Student]){
 }
 
 func findStudentAvgGrade(students: [Student]){
-    print("Enter Passing Threshhold ", terminator: "")
+    print("Enter Student ID: ", terminator: "")
     var id = Int(readLine() ?? "0") ?? 0
     
     for i in students{
@@ -117,7 +117,7 @@ func findStudentAvgGrade(students: [Student]){
 }
 
 func showPassingFailing(students: [Student]){
-    print("Enter Student ID: ", terminator: "")
+    print("Enter Passing Threshhold : ", terminator: "")
     var threshold = Double(readLine() ?? "0") ?? 0
     
     for i in students{
